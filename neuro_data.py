@@ -15,9 +15,8 @@ def describe_data(df):
     print(df.isnull().sum())
 
 def plot_data(df):
-    plt.figure()
     df.plot(kind='scatter', x='Height(Inches)', y='Weight(Pounds)', alpha=0.5)
-    plt.title('Height vs. Weight (sample neuro proxy)')
+    plt.title('Height vs. Weight (sample data)')
     plt.grid(True)
     plt.tight_layout()
     plt.savefig('height_vs_weight.png')
